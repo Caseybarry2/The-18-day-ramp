@@ -86,7 +86,7 @@ header.nav::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height
 .pill[aria-selected="true"] svg{color:var(--violet)}
 
 /* TAB CONTENT */
-.section{padding:0 0 96px}
+.section{padding:0 0 60px}
 .tabview{display:none;animation:rise .45s ease both;padding-top:62px}
 .tabview.active{display:block}
 @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
@@ -749,8 +749,8 @@ body.sbx-on #sbxbadge{display:inline-flex}
 <div class="code"><span class="c">// onboarding, declared as code, not learned by osmosis</span>
 <span class="k">const</span> <span class="f">ramp</span> <span class="p">=</span> <span class="k">new</span> <span class="f">FinanceEngineer</span>.<span class="f">Onboarding</span>(<span class="s">"NewCo"</span>, {
   <span class="pr">day</span><span class="p">:</span> <span class="n">0</span>,
-  <span class="pr">documentation</span><span class="p">:</span> <span class="n">null</span>,
-  <span class="pr">closeProcess</span><span class="p">:</span> <span class="s">"undocumented"</span>,
+  <span class="pr">documentation</span><span class="p">:</span> <span class="n">minimal</span>,
+  <span class="pr">closeProcess</span><span class="p">:</span> <span class="s">"live"</span>,
   <span class="pr">strategy</span><span class="p">:</span> <span class="f">deploy</span>([
     rapidSystemArchitect,    <span class="c">// map the system</span>
     knowledgePipeline,       <span class="c">// capture what lives in heads</span>
@@ -926,7 +926,7 @@ body.sbx-on #sbxbadge{display:inline-flex}
     <div class="subpanel" id="uc2-problem">
       <div class="hook">
         <h2 class="hook-q">The workflows are already there. <span class="em">The documentation isn't.</span></h2>
-        <p class="hook-p">Order-to-cash, procure-to-pay, hire-to-pay: the workflows a company runs on live in people's heads and across a dozen systems. You can't improve, control, or trust a process you can't see.</p>
+        <p class="hook-p">Record-to-report: the workflow behind the numbers spans people, systems, approvals, reconciliations, and exceptions. The goal is to turn that context into a visible process map the team can improve, control, and eventually automate.</p>
       </div>
 
       <div class="familiar"><span class="eyebrow">So I turn every process conversation into a map</span></div>
@@ -1068,11 +1068,11 @@ body.sbx-on #sbxbadge{display:inline-flex}
       <div class="phases">
         <div class="phase p1">
           <div class="phase-top"><span class="phase-k">Phase 1</span><span class="phase-tag now">doing now</span></div>
-          <div class="phase-h" style="font-weight:500">File Intelligence</div>
+          <div class="phase-h">File Intelligence</div>
           <div class="phase-step"><span class="pn">&#9656;</span><span>Feed the workbook to AI and walk through how it works and updates, step by step</span></div>
           <div class="phase-step"><span class="pn">&#9656;</span><span>Reverse-engineer the underlying logic: the inputs, the rules, the outputs</span></div>
-          <div class="phase-step"><span class="pn">&#9656;</span><span>Rebuild the static spreadsheet to be <b>dynamic and scalable</b>, with logic that flexes with new data instead of breaking</span></div>
-          <div class="phase-step"><span class="pn">&#9656;</span><span>Write the <b>Agent Tab</b>, a plain-language operating guide written for an agent</span></div>
+          <div class="phase-step"><span class="pn">&#9656;</span><span>Rebuild the static spreadsheet to be dynamic and scalable, with logic that flexes with new data instead of breaking</span></div>
+          <div class="phase-step"><span class="pn">&#9656;</span><span>Write the Agent Tab, a plain-language operating guide written for an agent</span></div>
         </div>
         <div class="phase-arrow">&rarr;</div>
         <div class="phase p2">
